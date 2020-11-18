@@ -1,0 +1,40 @@
+:root {
+  --width: 200px;
+  --height: 60px;
+  --colorRed: red;
+  --colorYellow: yellow;
+  --colorGreen: green;
+  --fontSize: 20px;
+  --bgColor: #3c3c3c;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body div {
+  width: var(--width);
+  height: var(--height);
+  background: var(--bgColor);
+  text-align: center;
+  line-height: var(--height);
+  font-size: var(--fontSize);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+body div:nth-of-type(1) {
+  color: var(--colorRed);
+}
+body div:nth-of-type(2) {
+  color: var(--colorYellow);
+  font-size: calc(var(--fontSize) + 10px);
+}
+body div:nth-of-type(3) {
+  color: var(--colorGreen);
+  font-size: calc(var(--fontSize) + 30px);
+}

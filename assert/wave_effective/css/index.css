@@ -37,7 +37,6 @@
   position: absolute;
   border: 2px solid #fff;
   box-sizing: border-box;
-  display: inline-block;
   border-radius: 50%;
   animation: animate 5s linear infinite;
   animation-delay: calc(0.5s*var(--i));

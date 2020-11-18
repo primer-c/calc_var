@@ -53,53 +53,6 @@
   animation-delay: calc(.2s*var(--i));
   ```
 
-- 案例2
-
-- HTML
-
-  ```html
-  <body>
-    <div class="div-1">div-1</div>
-    <div class="div-2">div-2</div>
-    <div class="div-3">div-3</div>
-  </body>
-  ```
-
-- CSS
-
-  ```css
-  body{
-    --width : 200px;
-    --height : 200px;
-    --color : red;
-    --fontSize : 18px;
-    --bgColor : #3c3c3c;
-  }
-  body{
-      display: flex;
-      justify-content: space-around
-  }
-  div{
-      width: var(--width);
-      height: var(--height);
-      line-height: var(--height);
-      background-color: var(--bgColor);
-      text-align: center;
-
-  }
-  .div-1{
-      color: var(--color);
-      font-size: var(--fontSize);
-  }
-  .div-2{
-      color: yellow;
-      font-size: calc(var(--fontSize) + 4px);
-  }
-  .div-3{
-      color: green;
-      font-size: calc(var(--fontSize) + 8px);
-  }
-  ```
 #### 3.总结
 
 - 关于函数要的慎用，会影响SEO优化；
